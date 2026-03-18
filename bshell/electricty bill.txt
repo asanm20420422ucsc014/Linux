@@ -1,0 +1,16 @@
+echo "government of tamilnadu"
+echo "electricty bill"
+echo "---------"
+echo "enter the eb number:"
+read number
+echo "enter the coustmer name"
+read name
+echo "enter the pervious unit"
+read a
+echo "enter the current unit"
+read b
+echo "report"
+c=`expr $b - $a`
+echo "unit consumed in this month:$c"
+d=`expr $c \* 5`
+echo "amount to be paid INR:$d"

@@ -1,0 +1,17 @@
+echo "arihmetic operation"
+echo "-----------"
+echo "enter the first number:"
+read a
+echo "enter the second number:"
+read b
+echo "report"
+c=`expr $a + $b`
+echo "addition:$c"
+c=`expr $a - $b`
+echo "subtraction:$c"
+c=`expr $a \* $b`
+echo "multiplclation:$c"
+c=`expr $a / $b`
+echo "division:$c"
+c=`expr $a % $b`
+echo "modulo division:$c"

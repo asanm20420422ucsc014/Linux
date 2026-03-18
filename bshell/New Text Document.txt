@@ -1,0 +1,28 @@
+echo "MANIKANDAN COMPUTER MART"
+echo "Kalathu Mettu St, Nadukuppam"
+echo "----------------------------"
+echo "BILL RECEIPT"
+
+echo "Enter the Serial No:"
+read a
+
+echo "Enter the Particulars:"
+read b
+
+echo "Enter the Rate:"
+read c
+
+echo "Enter the Quantity:"
+read d
+
+echo "----------------------------"
+echo "Report"
+
+amount=`expr $c \* $d`
+echo "Amount of Purchase: $amount"
+
+gst=`expr $amount \* 10 / 100`
+echo "GST (10%): $gst"
+
+total=`expr $amount + $gst`
+echo "Total Amount to be Paid: $total"
